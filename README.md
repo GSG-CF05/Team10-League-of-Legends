@@ -35,9 +35,13 @@ Our website is the perfect website for League of Legends players, it provides th
 - Local Storage
 
 # User Journey <span id="userJourney"> </span>
+**First** when the user enter the website landing page will show up for 4 seconds then it will disappear.
 
-**Loading page** => after 4 seconds => **Slider page** contains four pictures for league of legends champions => **Home Page** contains search bar to let the user search for the characters, he can see pictures of the champions and their names and move between them. when the user clicks on the image of the hero it will show up two buttons => **1- Skin button** it will open a page to see the skins of the champion. => **2- Details button** it will open a page to know information about the champion. and the user can move between Skin page and Details page directly.
+**Second** Slider page that contains images of league of legends champions at the end a continue button will show up that will move you to the Home page.
 
+**Third** in the home page there is a search bar that enables you to search for any champions you want. when you click on a champion image two buttons will appear that will lead you to skin page or details page.
+
+**Fourth** in the skins page he will be able to see the champion's skins and in the details page he will be able to see some information about the champion and see the champion's map. and you can move between the skins and details pages directly.
 
 ## User Stories <span id="userStories"> </span>
 * as a user i should be able to search about any character
@@ -47,14 +51,15 @@ Our website is the perfect website for League of Legends players, it provides th
 
 ## Link <span id="link"> </span>
 - You can visit our Website by [clicking here]()
-- Figma Link [click here]()
 - API documentation [Charcter information](http://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json) and 
 [Map information](https://static.developer.riotgames.com/docs/lol/maps.json)
 ## How do I get the project on my local machine?
 ### You can get the project in your local machine:-
-- clone repository by git command.
-- cd to project folder by repository name.
-- open project in vscode, write code . in command line.
+
+- git clone `https://github.com/GSG-CF05/Team10-League-of-Legends.git`
+
+- cd Team10-League-of-Legends
+- go live server
 
 ## Mentor <span id="mentor"> </span>
 - [Yousef Dalloul](https://github.com/Yousef-Dall)
