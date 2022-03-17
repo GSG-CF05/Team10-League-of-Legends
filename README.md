@@ -1,15 +1,15 @@
 # Team10-League-of-Legends
 
-[Wireframe](#wireFrame)
-[Design](#design)
-[Description](#description)
-[Build with](#buildWith)
-[Features](#features)
-[User journey](#userJourney)
-[User stories](#userStories)
-[Live link](#liveLink)
-[Mentor](#mentor)
-[Team members](#teamMember)
+-[Wireframe](#wireFrame)
+-[Design](#design)
+-[Description](#description)
+-[Build with](#buildWith)
+-[Features](#features)
+-[User journey](#userJourney)
+-[User stories](#userStories)
+-[Live link](#liveLink)
+-[Mentor](#mentor)
+-[Team members](#teamMember)
 # Wire Frame <span id="wireFrame"> </span>
 
 ![](image/WireFrame.jpeg)
@@ -35,25 +35,23 @@ Our website is the perfect website for League of Legends players, it provides th
 - Local Storage
 
 # User Journey <span id="userJourney"> </span>
-When the user open the website loading page will show up after a while will disappear 
-the slider page will present four images at the end it move you to the home page
-the home page include:
-1- Search bar
-2- Characters pictures {
-    contains :
-    skin button: show up a page contains the skins of the champion.
-    details button: show up a page contains information about the champion.}
-3- Move buttons
+
+**Loading page** => after 4 seconds => **Slider page** contains four pictures for league of legends champions => **Home Page** contains search bar to let the user search for the characters, he can see pictures of the champions and their names and move between them. when the user clicks on the image of the hero it will show up two buttons => **1- Skin button** it will open a page to see the skins of the champion. => **2- Details button** it will open a page to know information about the champion. and the user can move between Skin page and Details page directly.
+
 
 ## User Stories <span id="userStories"> </span>
-as a user i should be able to move between the pages 
-as a user i should be able to search about any character
-as a user i should be able to see the skins of the champion. 
-as a user i should be able to see the details of the character. 
+* as a user i should be able to search about any character
+* as a user i should be able to see the skins of the champion. 
+* as a user i should be able to see the details of the character. 
 
 
 ## Live link <span id="liveLink"> </span>
 You can visit our Website by [clicking here]()
+## How do I get the project on my local machine?
+### You can get the project in your local machine:-
+- clone repository by git command.
+- cd to project folder by repository name.
+- open project in vscode, write code . in command line.
 
 ## Mentor <span id="mentor"> </span>
 - [Yousef Dalloul](https://github.com/Yousef-Dall)
