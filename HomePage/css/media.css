@@ -1,0 +1,124 @@
+@media (min-width: 767px) {
+  /* start header  */
+  .intro-img-desktop {
+    display: block;
+    width: 100%;
+    height: 570px;
+    margin: auto;
+  }
+  .intro-img {
+    display: none;
+  }
+  .search {
+    margin-top: 61px;
+  }
+  .search input {
+    width: 20%;
+    height: 50px;
+    font-size: 25px;
+  }
+  .disktop-btn {
+    width: 250px;
+    font-size: 134%;
+  }
+  /* end header  */
+  /* start main  */
+  main {
+    margin-top: 28px;
+  }
+  .champion {
+    display: none;
+  }
+  .title-desktop,
+  h1 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    background: linear-gradient(180deg, #cbac62 0%, #cbac62 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    max-width: 400px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  h1 {
+    font-size: 45px;
+  }
+  .champion-disktop {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 100px auto 0 auto;
+    height: 500px;
+
+    overflow: auto;
+  }
+  .champion-disktop figcaption {
+    margin: 30px 10px 0 10px;
+  }
+  .champion-disktop figcaption h3 {
+    color: #cbac62;
+    text-align: center;
+    margin-bottom: 17px;
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #030910;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7a5c29;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #cf993b;
+  }
+
+  .imgResult {
+    transform: rotateY(180deg);
+  }
+  .phone-footer {
+    display: none;
+  }
+  /* end main  */
+  /* start footer  */
+  footer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #f5b00f63;
+    box-shadow: 0 0px 14px 0 rgb(17, 17, 17), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    margin-top: 150px;
+  }
+  .icons {
+    margin-top: 50px;
+  }
+
+  .icons a {
+    font-size: 70px;
+    color: #cbac62;
+    margin-left: 15px;
+  }
+  .disktop-footer {
+    display: block;
+    background-image: url(../img/game.png);
+    background-position: center bottom;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: 300px;
+  }
+  /* end footer  */
+}
