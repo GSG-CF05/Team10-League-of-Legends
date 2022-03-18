@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@600;700;800;900&family=Syne+Mono&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #030910;
+}
+
+
+/* start loading page */
+
+.title-loading {
+    font-family: 'Arvo', serif;
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 900;
+    color: rgb(103, 71, 31);
+    font-size: 48px;
+    line-height: 63px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 72%;
+    margin-bottom: 45px;
+    background: linear-gradient(180deg, #ffb504 0%, #caba93 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo-img {
+    display: block;
+    margin: auto;
+}
+
+.loading-img-gif {
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin: auto;
+    box-shadow: -1px -43px 9px rgb(255, 255, 255) inset;
+    filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+}
+
+
+/* end loading page */
+
+
+/* =================================================================== */
+
+
+/* start slider  */
+
+.mySlides {
+    display: none;
+}
+
+.slideshow-container {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #cbac62;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    display: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.fa-solid {
+    background-color: #030910;
+    padding: 10px;
+    border-radius: 50%;
+    border: 3px solid #cbac62;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* start digzin btn  */
+
+.cont-btn {
+    font-family: 'Marcellus SC', serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px 15px;
+    background: #1e2328;
+    color: #cdbe91;
+    box-shadow: inset 0 0 2px #000000;
+    border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29);
+    border-image-slice: 1;
+    border-width: 2px;
+}
+
+.cont-btn:hover {
+    text-shadow: 0 0 5px #ffffff80;
+    box-shadow: 0 0 8px 0 #ffffff50;
+    background: linear-gradient(to bottom, #1e2328, #433d2b);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.cont-btn:active {
+    text-shadow: none;
+    box-shadow: none;
+    color: #cdbe9130;
+}
+
+.div-btn-slider {
+    position: absolute;
+    bottom: 106px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-btn {
+    display: none;
+    width: 150px;
+    font-size: 25px;
+}
+
+
+/* end digzin btn  */
+
+
+/* The dots/bullets/indicators */
+
+.dots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 53px;
+    width: 100%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    margin: 0 2px;
+    background-color: #cbac62;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active,
+.dot:hover {
+    background-color: #030910;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*================== end slider ======================= */
+
+.loading-disktop {
+    display: none;
+}
