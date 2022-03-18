@@ -23,7 +23,7 @@ body {
 }
 .search input {
   margin-top: 5px;
-  width: 204px;
+  width: 60%;
   height: 24px;
   margin-right: 15px;
   background: rgba(196, 196, 196, 0.49);
@@ -70,10 +70,12 @@ body {
   flex-wrap: wrap;
   margin: 23px 20px 0 20px;
 }
-.champion figure {
+.champion figcaption {
+  margin: auto;
   width: 30%;
+  text-align: center;
 }
-.champion figure h3 {
+.champion figcaption h3 {
   color: #cbac62;
   text-align: center;
   margin-bottom: 17px;
@@ -97,7 +99,7 @@ body {
 }
 /* end main  */
 /* start footer  */
-footer {
+.phone-footer {
   margin: 12px 26px 40px 26px;
   display: flex;
   justify-content: space-between;
@@ -121,4 +123,21 @@ footer {
   width: 42px;
   height: 42px;
   padding-left: 15px;
+}
+/* =========== display ========== */
+.intro-img-desktop {
+  display: none;
+}
+.intro-img {
+  display: block;
+}
+.champion-disktop {
+  display: none;
+}
+.title-desktop,
+h1 {
+  display: none;
+}
+.disktop-footer {
+  display: none;
 }
