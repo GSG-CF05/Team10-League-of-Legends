@@ -75,7 +75,8 @@ main {
 }
 
 .map {
-  margin: 15px 5px;
+  width: 90%;
+  margin: 15px 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -97,6 +98,7 @@ main {
 .map-img {
   display: inline-block;
   border: 3px solid #cbac62;
+  margin-left: 15px;
 }
 
 button {
@@ -110,9 +112,10 @@ button {
   box-shadow: inset 0 0 2px #000000;
   border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29);
   border-image-slice: 1;
-  border-width: 2px;
+  border-width: 2px 0;
   display: block;
   margin: 15px auto 15px auto;
+  width: 85%;
 }
 
 button:hover {
