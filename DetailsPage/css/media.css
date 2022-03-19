@@ -1,0 +1,27 @@
+@media screen and (min-width: 767px) {
+  header {
+    margin: 2% 2% 0 2%;
+    justify-content: space-between;
+  }
+
+  .box {
+    margin: 0 30%;
+  }
+
+  .blurb {
+    width: 42%;
+    height: 120px;
+    overflow: auto;
+    text-align: center;
+  }
+
+  .map {
+    width: 60%;
+    margin: 15px 20%;
+    justify-content: space-evenly;
+  }
+
+  button {
+    width: 46%;
+  }
+}
