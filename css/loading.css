@@ -18,11 +18,11 @@ body {
     font-style: normal;
     font-weight: 900;
     color: rgb(103, 71, 31);
-    font-size: 48px;
+    font-size: 58px;
     line-height: 63px;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 72%;
+    margin-top: 38%;
     margin-bottom: 45px;
     background: linear-gradient(180deg, #ffb504 0%, #caba93 100%);
     -webkit-background-clip: text;
@@ -38,8 +38,8 @@ body {
 
 .loading-img-gif {
     display: block;
-    width: 250px;
-    height: 250px;
+    width: 330px;
+    height: 330px;
     border-radius: 100%;
     margin: auto;
     box-shadow: -1px -43px 9px rgb(255, 255, 255) inset;
