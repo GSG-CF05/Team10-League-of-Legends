@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@600;700;800;900&family=Syne+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arvo", serif;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  background-color: #030910;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  margin: 5% 0 5% 6%;
+  color: #cbac62;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0 20%;
+}
+
+.fa-arrow-left {
+  color: #cbac62;
+  padding: 10px;
+  border-radius: 50%;
+  border: 3px solid #cbac62;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.character {
+  color: #cbac62;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+}
+
+.box {
+  color: #cbac62;
+  border: 5px solid #cbac62;
+  padding: 5px;
+  text-align: center;
+  margin: 0 30px;
+}
+
+.blurb {
+  width: 85%;
+  height: 112px;
+  overflow: auto;
+  color: #c6992d;
+  padding: 5px;
+  margin: 21px auto 0 auto;
+}
+
+/* width */
+.blurb::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+.blurb::-webkit-scrollbar-thumb {
+  background: #cbac62;
+}
+
+.map {
+  width: 90%;
+  margin: 15px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.map-text h3 {
+  color: #fbd98a;
+  font-size: 18px;
+  margin-bottom: 3px;
+  text-align: center;
+}
+
+.map-text p {
+  color: #c6992d;
+  font-size: 13px;
+  text-align: center;
+}
+
+.map-img {
+  display: inline-block;
+  border: 3px solid #cbac62;
+  margin-left: 15px;
+}
+
+button {
+  font-family: "Marcellus SC", serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px 15px;
+  background: #1e2328;
+  color: #cdbe91;
+  box-shadow: inset 0 0 2px #000000;
+  border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29);
+  border-image-slice: 1;
+  border-width: 2px 0;
+  display: block;
+  margin: 15px auto 15px auto;
+  width: 85%;
+}
+
+button:hover {
+  text-shadow: 0 0 5px #ffffff80;
+  box-shadow: 0 0 8px 0 #ffffff50;
+  background: linear-gradient(to bottom, #1e2328, #433d2b);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+button:active {
+  text-shadow: none;
+  box-shadow: none;
+  color: #cdbe9130;
+}
+
+a {
+  text-decoration: none;
+}
