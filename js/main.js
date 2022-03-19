@@ -24,7 +24,7 @@ function loadingPageOff() {
     slider.style.display = 'block'
 }
 //?=============================================
-//!slider
+//! Slider
 let slideIndex = 1
 showSlides(slideIndex)
 
