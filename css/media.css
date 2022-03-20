@@ -1,4 +1,4 @@
-@media (min-width: 767px) {
+@media screen and (min-width: 1601px) {
     .loading-phone {
         display: none;
     }
@@ -17,7 +17,7 @@
         position: relative;
         display: block;
         margin: auto;
-        margin-top: 60px;
+        margin-top: 50px;
         border: 10px solid #cbac62;
         box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
     }
@@ -35,16 +35,73 @@
     }
     .loading-disktop img {
         position: absolute;
-        top: 100px;
+        top: 10%;
         margin: auto;
-        right: 480px;
+        right: 48%;
     }
     .dektop-btn {
         display: block;
         margin: auto;
         margin-top: 40px;
+        margin-bottom: 50px;
+        font-size: 40px;
+        width: 600px;
+    }
+    .dektop-btn a {
+        text-decoration: none;
+        color: #cbac62;
         font-size: 35px;
-        width: 400px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1900px) {
+    .loading-phone {
+        display: none;
+    }
+    .loading-disktop {
+        display: block;
+    }
+    .loading-video {
+        width: 100%;
+        position: relative;
+        display: block;
+        border: 10px solid #cbac62;
+        box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
+    }
+    .div-loading-video {
+        width: 70%;
+        position: relative;
+        display: block;
+        margin: auto;
+        margin-top: 50%;
+        border: 10px solid #cbac62;
+        box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
+    }
+    .div-loading-video::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-image: url(../image/logov.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        z-index: 15;
+    }
+    .loading-disktop img {
+        position: absolute;
+        top: 10%;
+        margin: auto;
+        right: 48%;
+    }
+    .dektop-btn {
+        display: block;
+        margin: auto;
+        margin-top: 4%;
+        margin-bottom: 50%;
+        font-size: 40px;
+        width: 250px;
     }
     .dektop-btn a {
         text-decoration: none;
