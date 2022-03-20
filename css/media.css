@@ -59,7 +59,17 @@
         display: none;
     }
     .loading-disktop {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
     }
     .loading-video {
         width: 100%;
