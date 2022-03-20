@@ -1,27 +1,49 @@
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   header {
-    margin: 2% 2% 0 2%;
-    justify-content: space-between;
+    margin: 2% 0 0 6%;
   }
-
+  
   .box {
-    margin: 0 30%;
+    margin: 0 120px;
   }
 
   .blurb {
-    width: 42%;
-    height: 120px;
-    overflow: auto;
+    width: 72%;
+    margin: 15px auto 0 auto;
     text-align: center;
   }
 
   .map {
-    width: 60%;
-    margin: 15px 20%;
+    margin: 0 12px;
+    justify-content: space-around;
+  }
+
+  button {
+    width: 68%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    margin: 2% 0 0 6%;
+  }
+  
+  .box {
+    margin: 0 250px;
+  }
+
+  .blurb {
+    width: 54%;
+    margin: 15px auto 0 auto;
+    text-align: center;
+  }
+
+  .map {
+    margin: 0 30px;
     justify-content: space-evenly;
   }
 
   button {
-    width: 46%;
+    width: 52%;
   }
 }
