@@ -25,25 +25,25 @@
 
 @media screen and (min-width: 1024px) {
   header {
-    margin: 2% 0 0 6%;
+    margin: 1% 0 0 6%;
   }
   
   .box {
-    margin: 0 250px;
+    margin: 0 320px;
   }
 
   .blurb {
-    width: 54%;
+    width: 52%;
     margin: 15px auto 0 auto;
     text-align: center;
   }
 
   .map {
-    margin: 0 30px;
+    margin: 0 60px;
     justify-content: space-evenly;
   }
 
   button {
-    width: 52%;
+    width: 50%;
   }
 }
