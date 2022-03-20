@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/loading.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <title>Leage of Legends</title>
+</head>
+
+<body>
+    <main class="loading-phone">
+        <!--start loading page  -->
+        <section class="loading">
+            <h1 class="title-loading">welcome</h1>
+            <img class="logo-img" src="./image/landing page.png" alt="" />
+            <img class="loading-img-gif" src="./image/lodding.gif" alt="" />
+        </section>
+        <!-- end loading page  -->
+        <!-- start slider  -->
+        <section class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="./image/1.png" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./image/2.png" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./image/3.png" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./image/4.png" style="width: 100%" />
+            </div>
+            <div class="arrow-btn">
+                <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-arrow-left"></i
+          ></a>
+                <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-arrow-right"></i
+          ></a>
+            </div>
+            <div class="div-btn-slider">
+                <button class="cont-btn slider-btn"> <a href="./HomePage/home.html" >Continue</a></button>
+            </div>
+            <div class="dots" style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </section>
+
+    </main>
+    <main class="loading-disktop">
+        <div class="div-loading-video">
+            <video class="loading-video" autoplay muted loop>
+            <source src="./image/video.webm" type="video/webm" />
+          </video>
+        </div>
+        <button class="cont-btn dektop-btn"> <a href="./HomePage/home.html" >Continue</a></button>
+    </main>
+    <script src="https://kit.fontawesome.com/872a0c00b6.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
