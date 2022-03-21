@@ -90,6 +90,8 @@ figcaption img:hover {
   color: #cbac62;
   text-align: center;
   margin-bottom: 17px;
+  overflow: hidden;
+  height: 25px;
 }
 figcaption a {
   color: #cbac62;
