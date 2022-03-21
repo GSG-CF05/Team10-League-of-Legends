@@ -7,6 +7,7 @@
   font-family: 'Arvo', serif;
   font-family: 'Roboto Slab', serif;
   font-style: normal;
+  transition: 0.5s linear all;
 }
 body {
   background-color: #030910;
@@ -75,10 +76,24 @@ body {
   width: 30%;
   text-align: center;
 }
+.champion figcaption img {
+  width: 95%;
+}
+figcaption img:hover {
+  animation-duration: 15s;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px 0 rgba(97, 94, 93, 0.5),
+    0 6px 20px 0 rgba(255, 255, 255, 0.363);
+}
+
 .champion figcaption h3 {
   color: #cbac62;
   text-align: center;
   margin-bottom: 17px;
+}
+figcaption a {
+  color: #cbac62;
+  text-decoration: none;
 }
 .buttons {
   display: none;
@@ -139,5 +154,19 @@ h1 {
   display: none;
 }
 .disktop-footer {
+  display: none;
+}
+.search-for-mobile {
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+.disktop-btn {
+  display: none;
+}
+.footer-btns {
+  display: none;
+}
+.intro-img-tab {
   display: none;
 }
