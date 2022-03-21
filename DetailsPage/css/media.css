@@ -2,7 +2,7 @@
   header {
     margin: 2% 0 0 6%;
   }
-  
+
   .box {
     margin: 0 120px;
   }
@@ -11,6 +11,7 @@
     width: 72%;
     margin: 15px auto 0 auto;
     text-align: center;
+    max-width: 400px;
   }
 
   .map {
@@ -27,9 +28,10 @@
   header {
     margin: 1% 0 0 6%;
   }
-  
+
   .box {
-    margin: 0 320px;
+    width: 400px;
+    margin: auto;
   }
 
   .blurb {
@@ -39,11 +41,12 @@
   }
 
   .map {
-    margin: 0 60px;
-    justify-content: space-evenly;
+    margin: auto;
+    width: 500px;
+    justify-content: space-between;
   }
 
   button {
-    width: 50%;
+    width: 500px;
   }
 }
