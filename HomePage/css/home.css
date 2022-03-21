@@ -80,7 +80,7 @@ body {
   width: 95%;
 }
 figcaption img:hover {
-  animation-duration: 15s;
+
   transform: scale(1.1);
   box-shadow: 0 4px 8px 0 rgba(97, 94, 93, 0.5),
     0 6px 20px 0 rgba(255, 255, 255, 0.363);
@@ -92,6 +92,10 @@ figcaption img:hover {
   margin-bottom: 17px;
   overflow: hidden;
   height: 25px;
+}
+figcaption a {
+  color: #cbac62;
+  text-decoration: none;
 }
 figcaption a {
   color: #cbac62;
@@ -169,6 +173,7 @@ h1 {
 .footer-btns {
   display: none;
 }
+
 .intro-img-tab {
   display: none;
 }
