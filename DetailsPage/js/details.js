@@ -70,7 +70,7 @@ fetch('https://ddragon.leagueoflegends.com/cdn/6.8.1/data/en_US/map.json')
 
       mapTitle.textContent = arrayMap[2].MapName
       console.log(arrayMap[2].image.full)
-    } else if (tag.textContent == 'tank') {
+    } else if (tag.textContent == 'Tank') {
       mapImg.setAttribute('src', mapLink + arrayMap[3].image.full)
       mapDes.textContent = mapDesArray[3]
 
