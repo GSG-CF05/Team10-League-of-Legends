@@ -51,6 +51,9 @@
         text-decoration: none;
         color: #cbac62;
         font-size: 35px;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
     }
 }
 
