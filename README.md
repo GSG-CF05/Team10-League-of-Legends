@@ -1,15 +1,15 @@
 # Team10-League-of-Legends
 
--[Wireframe](#wireFrame)
--[Design](#design)
--[Description](#description)
--[Build with](#buildWith)
--[Features](#features)
--[User journey](#userJourney)
--[User stories](#userStories)
--[Links](#links)
--[Mentor](#mentor)
--[Team members](#teamMember)
+- [Wireframe](#wireFrame)
+- [Design](#design)
+- [Description](#description)
+- [Build with](#buildWith)
+- [Features](#features)
+- [User journey](#userJourney)
+- [User stories](#userStories)
+- [Links](#links)
+- [Mentor](#mentor)
+- [Team members](#teamMember)
 # Wire Frame <span id="wireFrame"> </span>
 
 ![](image/WireFrame.jpeg)
@@ -49,10 +49,10 @@ Our website is the perfect website for League of Legends players, it provides th
 * as a user i should be able to see the details of the character. 
 
 
-## Link <span id="link"> </span>
-- You can visit our Website by [clicking here]()
+## Link <span id="links"> </span>
+- You can visit our Website by [Clicking here](https://gsg-cf05.github.io/Team10-League-of-Legends/)
 - API documentation [Charcter information](http://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json) and 
-[Map information](https://static.developer.riotgames.com/docs/lol/maps.json)
+[Map information](http://ddragon.leagueoflegends.com/cdn/6.8.1/data/en_US/map.json)
 ## How do I get the project on my local machine?
 ### You can get the project in your local machine:-
 
