@@ -47,7 +47,9 @@ main {
   padding: 5px;
   align-items: center;
 }
-
+.character img{
+  height: 270px;
+}
 .box {
   color: #cbac62;
   border: 5px solid #cbac62;
@@ -64,7 +66,9 @@ main {
   padding: 5px;
   margin: 21px auto 0 auto;
 }
-
+.tags{
+  display: none;
+}
 /* width */
 .blurb::-webkit-scrollbar {
   width: 5px;
@@ -82,7 +86,9 @@ main {
   justify-content: space-around;
   align-items: center;
 }
-
+.map img{
+  width: 120px;
+}
 .map-text h3 {
   color: #fbd98a;
   font-size: 18px;

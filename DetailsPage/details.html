@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/details.css" />
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/media.css" />
     <title>Details</title>
   </head>
   <body>
+    <p class="tags"></p>
     <!-- start header -->
     <header>
-      <a class="back" href="../SkinsPage/skins.html"
+      <a class="back" href="../HomePage/home.html"
         ><i class="fa-solid fa-arrow-left"></i
       ></a>
     </header>
@@ -21,33 +22,24 @@
     <!-- start main -->
     <main>
       <!-- character info -->
-      <section class="character">
-        <img src="img/Annie_2 1.png" alt="Character" />
-        <h3>Annie</h3>
-        <h4>The Dark Child</h4>
-      </section>
+      <section class="character"></section>
 
       <!-- box info -->
       <section class="box">
-        <span class="span-1">Attack: 2,</span>
-        <span class="span-2">Defense: 3,</span>
-        <span class="span-3">Magic: 10</span>
+        <span class="span-1">Attack: </span>,
+        <span class="span-2">Defense: </span>,
+        <span class="span-3">Magic: </span>
       </section>
 
       <!-- description -->
-      <section class="blurb">
-        Dangerous, yet disarmingly precocious, Annie is a child mage with
-        immense pyromantic power. Even in the shadows of the mountains north of
-        Noxus, she is a magical outlier. Her natural affinity for fire
-        manifested early in life through unpredictable...
-      </section>
+      <section class="blurb"></section>
 
       <!-- map info -->
       <section class="map">
-        <img class="map-img" src="img/1 1.png" alt="Map" />
+        <img class="map-img" alt="Map" />
         <div class="map-text">
-          <h3>Summoner's Rift</h3>
-          <p>"Original Summer variant"</p>
+          <h3 class="map-title"></h3>
+          <p class="map-Des"></p>
         </div>
       </section>
     </main>
@@ -64,5 +56,6 @@
       src="https://kit.fontawesome.com/872a0c00b6.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/details.js"></script>
   </body>
 </html>
