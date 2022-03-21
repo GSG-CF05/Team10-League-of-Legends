@@ -4,6 +4,10 @@ let slider = document.querySelector('.slideshow-container ')
 let sliderBtn = document.querySelector('.slider-btn')
 let next = document.querySelector('.next')
 let prev = document.querySelector('.prev')
+let dot1 = document.querySelector('.dot1')
+let dot2 = document.querySelector('.dot2')
+let dot3 = document.querySelector('.dot3')
+let dot4 = document.querySelector('.dot4')
 let num = 0
     //?=======================================================
     //!loading page
@@ -83,6 +87,37 @@ function clickPrev() {
 }
 //?==================================================
 //!
+
+dot1.addEventListener("click", () => {
+    num = 0;
+    contBtn.style.display = 'none';
+    prev.style.display = 'none';
+    next.style.display = 'block';
+
+})
+dot2.addEventListener("click", () => {
+    num = 1;
+    contBtn.style.display = 'none';
+    prev.style.display = 'block';
+    next.style.display = 'block';
+
+})
+dot3.addEventListener("click", () => {
+    num = 2;
+    contBtn.style.display = 'none';
+    prev.style.display = 'block';
+    next.style.display = 'block';
+
+
+})
+dot4.addEventListener("click", () => {
+    num = 3;
+    contBtn.style.display = 'block';
+    prev.style.display = 'block';
+    next.style.display = 'none';
+
+
+})
 let v = document.querySelector('.loading-video')
 document.addEventListener('DOMContentLoaded', getTasksOnLoad)
 
