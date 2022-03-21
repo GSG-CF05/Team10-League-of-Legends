@@ -17,7 +17,7 @@ let num = 0
 let localStorageArray = []
 
 //! ===============start API========================
-fetch('http://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json')
+fetch('https://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json')
   .then((res) => {
     return res.json()
   })
@@ -40,7 +40,7 @@ fetch('http://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json')
         //* createElements
         let imgName = champ.image.full
         let imgLink =
-          'http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/' +
+          'https://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/' +
           imgName
         let figcaption = document.createElement('figcaption')
         let pressureImg = document.createElement('a')
@@ -114,7 +114,7 @@ fetch('http://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json')
           sectionChampion.setAttribute('class', 'champion')
           let imgName1 = arrayAllChampion[i].image.full
           let imgLink =
-            'http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/' +
+            'https://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/' +
             imgName1
           let figcaption = document.createElement('figcaption')
           let pressureImg = document.createElement('a')
@@ -279,7 +279,7 @@ fetch('http://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json')
     }
   })
 
-fetch('http://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json')
+fetch('https://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json')
   .then((res) => {
     return res.json()
   })
@@ -301,7 +301,7 @@ fetch('http://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json')
       //* createElements
       let imgName = champ.image.full
       let imgLink =
-        'http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/' + imgName
+        'https://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/' + imgName
       let figcaption = document.createElement('figcaption')
       let pressureImg = document.createElement('a')
       let img = document.createElement('img')
@@ -368,7 +368,7 @@ fetch('http://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json')
             sectionChampionDisktop.setAttribute('class', 'champion-disktop')
             let imgName1 = arrayAllChampion[i].image.full
             let imgLink =
-              'http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/' +
+              'https://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/' +
               imgName1
             let homeDesktop = document.createElement('button')
             let figcaption = document.createElement('figcaption')
@@ -447,7 +447,7 @@ fetch('http://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json')
                 //* createElements
                 let imgName = champ.image.full
                 let imgLink =
-                  'http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/' +
+                  'https://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/' +
                   imgName
                 let figcaption = document.createElement('figcaption')
                 let pressureImg = document.createElement('a')
