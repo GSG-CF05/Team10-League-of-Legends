@@ -12,13 +12,18 @@
     display: none;
   }
   .search {
+
     margin-top: 10px;;
+ 
+
   }
   .phone-btn {
     display: none;
   }
   .disktop-btn {
     display: block;
+    height: 49px;
+    margin-top: 7px;
   }
   .search input {
     width: 400px;
@@ -153,6 +158,7 @@
   }
   /* end footer  */
 }
+
 
 @media (min-width: 1024px) {
   .intro-img-desktop {

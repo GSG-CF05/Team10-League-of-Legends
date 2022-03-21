@@ -1,0 +1,49 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    margin: 2% 0 0 6%;
+  }
+  
+  .box {
+    margin: 0 120px;
+  }
+
+  .blurb {
+    width: 72%;
+    margin: 15px auto 0 auto;
+    text-align: center;
+  }
+
+  .map {
+    margin: 0 12px;
+    justify-content: space-around;
+  }
+
+  button {
+    width: 68%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    margin: 1% 0 0 6%;
+  }
+  
+  .box {
+    margin: 0 320px;
+  }
+
+  .blurb {
+    width: 52%;
+    margin: 15px auto 0 auto;
+    text-align: center;
+  }
+
+  .map {
+    margin: 0 60px;
+    justify-content: space-evenly;
+  }
+
+  button {
+    width: 50%;
+  }
+}
