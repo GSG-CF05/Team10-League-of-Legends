@@ -9,12 +9,12 @@
     margin: auto;
   }
   .skins img {
-    height: 350px;
+    height: 54vh;
   }
   .skin2 {
     display: block;
     width: 25%;
-    height: 450px !important;
+    height: 70vh !important;
     position: relative;
     bottom: 60px;
     margin-left: 20px;
@@ -30,7 +30,7 @@
     transform: scale(1.2);
   }
   .skin2:hover {
-    transform: scale(1.2);
+    transform: scale(1.08);
   }
   .skin3:hover {
     transform: scale(1.2);
