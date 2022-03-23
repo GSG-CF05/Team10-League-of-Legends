@@ -70,12 +70,16 @@ main {
   display: none;
 }
 /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
 .blurb::-webkit-scrollbar {
   width: 5px;
 }
 
 /* Handle */
-.blurb::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: #cbac62;
 }
 
