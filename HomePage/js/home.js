@@ -10,12 +10,80 @@ let searchDesktop = document.querySelector('.disktop-btn')
 let searchInput = document.querySelector('.search-input')
 let footerBtns = document.querySelector('.phone-footer')
 let searchHome = document.querySelector('.search-home')
+//!===================================================
 
 let a = 0
 let b = 9
 let num = 0
 let localStorageArray = []
+function transBatweenPage(arrayChampion) {
+  //* createElement Contains the champions
 
+  sectionChampion = document.createElement('section')
+  main.appendChild(sectionChampion)
+  sectionChampion.setAttribute('class', 'champion')
+  //! start forEach
+  arrayChampion.forEach((champ) => {
+    createElm(champ, sectionChampion)
+  })
+}
+function createElm(champ, sectionChampion) {
+  //* createElements
+  let imgName = champ.image.full
+  let imgLink =
+    'https://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/' + imgName
+  let figcaption = document.createElement('figcaption')
+  let pressureImg = document.createElement('a')
+  let img = document.createElement('img')
+  let champName = document.createElement('h3')
+  let transformButtons = document.createElement('div')
+  let skinBtn = document.createElement('button')
+  let detailsBtn = document.createElement('button')
+  //! skin && details btn
+  let skinPage = document.createElement('a')
+  let detailsPage = document.createElement('a')
+  detailsPage.textContent = 'Details'
+  skinPage.textContent = 'Skin'
+  detailsPage.setAttribute('href', '../DetailsPage/details.html')
+  skinPage.setAttribute('href', '../SkinsPage/skins.html')
+  detailsBtn.appendChild(detailsPage)
+  skinBtn.appendChild(skinPage)
+
+  //*setAttribute
+  skinBtn.setAttribute('class', 'skin-btn')
+  skinBtn.classList.add('btn')
+  detailsBtn.setAttribute('class', 'details-btn')
+  detailsBtn.classList.add('btn')
+  transformButtons.classList.add('buttons')
+  img.setAttribute('src', imgLink)
+
+  //* appendChild
+
+  figcaption.appendChild(pressureImg)
+  pressureImg.appendChild(img)
+  champName.textContent = champ.name
+  figcaption.appendChild(champName)
+  figcaption.appendChild(transformButtons)
+  transformButtons.appendChild(skinBtn)
+  transformButtons.appendChild(detailsBtn)
+  sectionChampion.appendChild(figcaption)
+  //!=================== save to local storage================
+  //!=========================================================
+  skinBtn.addEventListener('click', goToSkinPage)
+  function goToSkinPage() {
+    localStorage.setItem('key', JSON.stringify(champ))
+  }
+  //!=========================================================
+  detailsBtn.addEventListener('click', goToSkinPage)
+  function goToSkinPage() {
+    localStorage.setItem('key', JSON.stringify(champ))
+  }
+  //!=========================================================
+  pressureImg.addEventListener('click', appearBtn)
+  function appearBtn() {
+    transformButtons.classList.toggle('buttons')
+  }
+}
 //! ===============start API========================
 fetch('https://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json')
   .then((res) => {
@@ -29,72 +97,6 @@ fetch('https://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json')
     let arrayChampion = Object.entries(champions)
       .slice(a, b)
       .map((entry) => entry[1])
-    function transBatweenPage(arrayChampion) {
-      //* createElement Contains the champions
-
-      sectionChampion = document.createElement('section')
-      main.appendChild(sectionChampion)
-      sectionChampion.setAttribute('class', 'champion')
-      //! start forEach
-      arrayChampion.forEach((champ) => {
-        //* createElements
-        let imgName = champ.image.full
-        let imgLink =
-          'https://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/' +
-          imgName
-        let figcaption = document.createElement('figcaption')
-        let pressureImg = document.createElement('a')
-        let img = document.createElement('img')
-        let champName = document.createElement('h3')
-        let transformButtons = document.createElement('div')
-        let skinBtn = document.createElement('button')
-        let detailsBtn = document.createElement('button')
-        //! skin && details btn
-        let skinPage = document.createElement('a')
-        let detailsPage = document.createElement('a')
-        detailsPage.textContent = 'Details'
-        skinPage.textContent = 'Skin'
-        detailsPage.setAttribute('href', '../DetailsPage/details.html')
-        skinPage.setAttribute('href', '../SkinsPage/skins.html')
-        detailsBtn.appendChild(detailsPage)
-        skinBtn.appendChild(skinPage)
-
-        //*setAttribute
-        skinBtn.setAttribute('class', 'skin-btn')
-        skinBtn.classList.add('btn')
-        detailsBtn.setAttribute('class', 'details-btn')
-        detailsBtn.classList.add('btn')
-        transformButtons.classList.add('buttons')
-        img.setAttribute('src', imgLink)
-
-        //* appendChild
-
-        figcaption.appendChild(pressureImg)
-        pressureImg.appendChild(img)
-        champName.textContent = champ.name
-        figcaption.appendChild(champName)
-        figcaption.appendChild(transformButtons)
-        transformButtons.appendChild(skinBtn)
-        transformButtons.appendChild(detailsBtn)
-        sectionChampion.appendChild(figcaption)
-        //!=================== save to local storage================
-        //!=========================================================
-        skinBtn.addEventListener('click', goToSkinPage)
-        function goToSkinPage() {
-          localStorage.setItem('key', JSON.stringify(champ))
-        }
-        //!=========================================================
-        detailsBtn.addEventListener('click', goToSkinPage)
-        function goToSkinPage() {
-          localStorage.setItem('key', JSON.stringify(champ))
-        }
-        //!=========================================================
-        pressureImg.addEventListener('click', appearBtn)
-        function appearBtn() {
-          transformButtons.classList.toggle('buttons')
-        }
-      })
-    }
 
     transBatweenPage(arrayChampion)
 
@@ -112,62 +114,7 @@ fetch('https://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json')
           sectionChampion = document.createElement('section')
           main.appendChild(sectionChampion)
           sectionChampion.setAttribute('class', 'champion')
-          let imgName1 = arrayAllChampion[i].image.full
-          let imgLink =
-            'https://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/' +
-            imgName1
-          let figcaption = document.createElement('figcaption')
-          let pressureImg = document.createElement('a')
-          let img = document.createElement('img')
-          let champName = document.createElement('h3')
-          let transformButtons = document.createElement('div')
-          let skinBtn = document.createElement('button')
-          let detailsBtn = document.createElement('button')
-          //! skin && details btn
-          let skinPage = document.createElement('a')
-          let detailsPage = document.createElement('a')
-          detailsPage.textContent = 'Details'
-          skinPage.textContent = 'Skin'
-          detailsPage.setAttribute('href', '../DetailsPage/details.html')
-          skinPage.setAttribute('href', '../SkinsPage/skins.html')
-          detailsBtn.appendChild(detailsPage)
-          skinBtn.appendChild(skinPage)
-
-          //*setAttribute
-
-          skinBtn.setAttribute('class', 'skin-btn')
-          skinBtn.classList.add('btn')
-          detailsBtn.setAttribute('class', 'details-btn')
-          detailsBtn.classList.add('btn')
-          transformButtons.classList.add('buttons')
-          img.setAttribute('src', imgLink)
-
-          //* appendChild
-
-          figcaption.appendChild(pressureImg)
-          pressureImg.appendChild(img)
-          champName.textContent = arrayAllChampion[i].name
-          figcaption.appendChild(champName)
-          figcaption.appendChild(transformButtons)
-          transformButtons.appendChild(skinBtn)
-          transformButtons.appendChild(detailsBtn)
-          sectionChampion.appendChild(figcaption)
-          //!=================== save to local storage================
-          //!=========================================================
-          skinBtn.addEventListener('click', goToSkinPage)
-          function goToSkinPage() {
-            localStorage.setItem('key', JSON.stringify(arrayAllChampion[i]))
-          }
-          //!=========================================================
-          detailsBtn.addEventListener('click', goToSkinPage)
-          function goToSkinPage() {
-            localStorage.setItem('key', JSON.stringify(arrayAllChampion[i]))
-          }
-          //!=========================================================
-          pressureImg.addEventListener('click', appearBtn)
-          function appearBtn() {
-            transformButtons.classList.toggle('buttons')
-          }
+          createElm(arrayAllChampion[i], sectionChampion)
         }
       }
       searchInput.value = ''
@@ -299,59 +246,7 @@ fetch('https://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json')
     //! start forEach
     arrayChampion.forEach((champ) => {
       //* createElements
-      let imgName = champ.image.full
-      let imgLink =
-        'https://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/' + imgName
-      let figcaption = document.createElement('figcaption')
-      let pressureImg = document.createElement('a')
-      let img = document.createElement('img')
-      let champName = document.createElement('h3')
-      let transformButtons = document.createElement('div')
-      let skinBtn = document.createElement('button')
-      let detailsBtn = document.createElement('button')
-      //! skin && details btn
-      let skinPage = document.createElement('a')
-      let detailsPage = document.createElement('a')
-      detailsPage.textContent = 'Details'
-      skinPage.textContent = 'Skin'
-      detailsPage.setAttribute('href', '../DetailsPage/details.html')
-      skinPage.setAttribute('href', '../SkinsPage/skins.html')
-      detailsBtn.appendChild(detailsPage)
-      skinBtn.appendChild(skinPage)
-      //*setAttribute
-      skinBtn.setAttribute('class', 'skin-btn')
-      skinBtn.classList.add('btn')
-      detailsBtn.setAttribute('class', 'details-btn')
-      detailsBtn.classList.add('btn')
-      transformButtons.classList.add('buttons')
-      img.setAttribute('src', imgLink)
-
-      //* appendChild
-
-      figcaption.appendChild(pressureImg)
-      pressureImg.appendChild(img)
-      champName.textContent = champ.name
-      figcaption.appendChild(champName)
-      figcaption.appendChild(transformButtons)
-      transformButtons.appendChild(skinBtn)
-      transformButtons.appendChild(detailsBtn)
-      sectionChampionDisktop.appendChild(figcaption)
-
-      pressureImg.addEventListener('click', appearBtn)
-      function appearBtn() {
-        transformButtons.classList.toggle('buttons')
-      }
-      //!=================== save to local storage================
-      //!=========================================================
-      skinBtn.addEventListener('click', goToSkinPage)
-      function goToSkinPage() {
-        localStorage.setItem('key', JSON.stringify(champ))
-      }
-      //!=========================================================
-      detailsBtn.addEventListener('click', goToSkinPage)
-      function goToSkinPage() {
-        localStorage.setItem('key', JSON.stringify(champ))
-      }
+      createElm(champ, sectionChampionDisktop)
       //!=========================================================
       //!search
       let arrayAllChampion = Object.entries(champions).map((entry) => entry[1])
@@ -445,55 +340,7 @@ fetch('https://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json')
               //! start forEach
               arrayChampion.forEach((champ) => {
                 //* createElements
-                let imgName = champ.image.full
-                let imgLink =
-                  'https://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/' +
-                  imgName
-                let figcaption = document.createElement('figcaption')
-                let pressureImg = document.createElement('a')
-                let img = document.createElement('img')
-                let champName = document.createElement('h3')
-                let transformButtons = document.createElement('div')
-                let skinBtn = document.createElement('button')
-                let detailsBtn = document.createElement('button')
-                skinBtn.textContent = 'Skin'
-                detailsBtn.textContent = 'Details'
-
-                //*setAttribute
-                skinBtn.setAttribute('class', 'skin-btn')
-                skinBtn.classList.add('btn')
-                detailsBtn.setAttribute('class', 'details-btn')
-                detailsBtn.classList.add('btn')
-                transformButtons.classList.add('buttons')
-                img.setAttribute('src', imgLink)
-
-                //* appendChild
-
-                figcaption.appendChild(pressureImg)
-                pressureImg.appendChild(img)
-                champName.textContent = champ.name
-                figcaption.appendChild(champName)
-                figcaption.appendChild(transformButtons)
-                transformButtons.appendChild(skinBtn)
-                transformButtons.appendChild(detailsBtn)
-                sectionChampionDisktop.appendChild(figcaption)
-
-                pressureImg.addEventListener('click', appearBtn)
-                function appearBtn() {
-                  transformButtons.classList.toggle('buttons')
-                }
-                //!=================== save to local storage================
-                //!=========================================================
-                skinBtn.addEventListener('click', goToSkinPage)
-                function goToSkinPage() {
-                  localStorage.setItem('key', JSON.stringify(champ))
-                }
-                //!=========================================================
-                detailsBtn.addEventListener('click', goToSkinPage)
-                function goToSkinPage() {
-                  localStorage.setItem('key', JSON.stringify(champ))
-                }
-                //!=========================================================
+                createElm(champ, sectionChampionDisktop)
               })
             }
           }
