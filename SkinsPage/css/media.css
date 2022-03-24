@@ -1,55 +1,59 @@
-@media (min-width: 767px){
-    .parent{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin: auto;
-    }
-    .skins{
-        margin: auto;
-    }
-    .skins img{
-        height: 350px;
-    }
-    .skin2{
-        display: block;
-        width: 25%;
-        height: 400px !important;
-        position: relative;
-        bottom: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .skin1{
-        display: block;
-        position: static;
-        width: 20%;
-        margin: 0;
-    }
-    .skin1:hover{
-        transform: scale(1.2);
-    }
-    .skin2:hover{
-        transform: scale(1.2);
-    }
-    .skin3:hover{
-        transform: scale(1.2);
-    }
-    .skin3{
-        display: block;
-        position: static;
-        width: 20%;
-    }
-    button{
-        margin: 30px auto 0px auto;
-        /* margin: auto; */
-    }
-    .head{
-        display: flex;
-        justify-content: space-between;
-    }
-    .title{
-        width: 15%;
-        text-align: start;
-    }
+@media (min-width: 767px) {
+  .parent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+  .skins {
+    margin: auto;
+  }
+  .skins img {
+    height: 350px;
+  }
+  .skin2 {
+    display: block;
+    width: 25%;
+    height: 400px !important;
+    position: relative;
+    bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .skin1 {
+    display: block;
+    position: static;
+    width: 20%;
+    margin: 0;
+  }
+  .skin1:hover {
+    transform: scale(1.2);
+  }
+  .skin2:hover {
+    transform: scale(1.2);
+  }
+  .skin3:hover {
+    transform: scale(1.2);
+  }
+  .skin3 {
+    display: block;
+    position: static;
+    width: 20%;
+  }
+  button {
+    margin: 30px auto 0px auto;
+    /* margin: auto; */
+  }
+  .head {
+    display: flex;
+    justify-content: space-between;
+  }
+  .title {
+    width: 15%;
+    text-align: start;
+  }
+  button {
+    margin-top: 102px;
+    width: 28%;
+  }
 }
